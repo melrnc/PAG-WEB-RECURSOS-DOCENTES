@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnologías y Herramientas</title>
+  <style>
+     *{
+    box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #dbf1b3;
+    }
+
+    nav, footer {
+      width: 100%;
+      background-color: #4CAF50; 
+      color: white;
+      display: flex; 
+      justify-content: space-around; 
+      align-items: center; /* Centra los elementos verticalmente */
+      padding: 1%; 
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex; 
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px; 
+      border-radius: 5px; 
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #3e8e41; 
+    }
+
+    .titulo{
+      text-align: center;
+      font-size: 2em;
+      text-shadow: 2px 2px 5px #9ea19e;
+      margin-bottom: 30px;
+    }
+
+    #contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      background-color: antiquewhite;
+    }
+
+    .icono {
+      width: 300px;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      overflow: auto;
+      cursor:pointer ;
+      transition: width 2s;
+      opacity: 0.5;
+    }
+
+    .icono a{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+
+    .icono:hover{
+        opacity: 1;
+        width: 40%;
+        height: 40%;
+       
+    }
+
+    .icono img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .icono p {
+            text-align: center; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    footer {
+      margin-top: auto;
+    }
+    
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Principal</a></li>
+      <li><a href="recursos.html">Recursos para el profesorado</a></li>
+      <li><a href="tecnologias.html">Tecnologías y herramientas</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+  </nav>
+  
+  <section id="recursos-plataformas">
+    <h1 class="titulo">Tecnologías y herramientas</h1>
+    <div id="contenedor">
+
+        <article class="icono">
+            <a id="enlace" href="">
+                <img src="img/kahoot.png" alt="Kahoot">
+                <p>Kahoot</p>
+            </a>
+        </article>
+
+        <article class="icono" >
+            <a id="enlace" href="">
+                <img src="img/scratchJr.png" alt="">
+                <p>ScrathJr</p>
+            </a>
+        </article>
+
+        <article class="icono">
+            <a id="enlace" href="https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fclassroom.google.com%2F&emr=1&followup=https%3A%2F%2Fclassroom.google.com%2F&passive=1209600&service=classroom&ifkv=AVdkyDnqophbwqjek0yHXQXT0NBOPYu5r-RDEdZ8PfYFf7IOB1jUZX5O36d_saCSTQYcohE5ryy6gw&ddm=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                <img src="img/classroom.png" alt="">
+                <p>Classroom</p>
+            </a>    
+        </article>
+    </div>
+</section>
+  <footer>
+    &copy; 2025 Recursos para Docentes
+  </footer>
+</body>
+</html>
