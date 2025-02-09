@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursos Docentes</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         body{
             padding-left: 20px;
             padding-right: 20px;
@@ -14,29 +16,59 @@
             margin: 0%;
         }
 
-        #contenedor-logo {
-            text-align: center; /* Centra el contenido dentro del contenedor */
-            margin-bottom: 20px;
-            }
-
-        #logoordenador {
-            width: 200px;
-            height: 200px;
-            border-radius: 30%; /* Redondea las esquinas */
-            display: inline-block; /* Asegura que se alinee correctamente */
+        nav, footer {
+            width: 100%;
+            background-color: #4CAF50; 
+            color: white;
+            display: flex; 
+            justify-content: space-around; 
+            align-items: center; /* Centra los elementos verticalmente */
+            padding: 1%; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
-        h1 {
-            font-family: "Parisienne", cursive;
-            font-size: 4em;
+
+        nav ul {
+            list-style: none; 
+            margin: 0; 
+            padding: 0; 
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px; 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #3e8e41; 
+        }
+       
+        .titulo {
             text-align: center;
-            color: goldenrod;
-            margin-bottom: 5px;
+            font-size: 2em;
+            text-shadow: 2px 2px 5px #9ea19e;
+            margin-bottom: 30px;
+        }
+
+        #contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
         }
 
         h2{
             font-family: "Pacifico";
-            color: #ffe4c4;
+            text-shadow: 2px 2px 5px #9ea19e;
+            margin-right: auto;
         }
 
         #eslogan {
@@ -45,36 +77,9 @@
             text-align: center;
             font-size: 2em;
             color: rgb(209, 98, 135);
-            border: 3px solid beige;
             width: 40%;
             margin: 0 auto;
             padding: 10px;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 100px;
-            margin: 10px 0;
-        }
-
-        ul li {
-            color: burlywood;
-            margin: 10px 0;
-        }
-
-        ul li a {
-            font-family: "Pacifico", cursive;
-            font-size: 1.5em;
-            color: burlywood;
-            text-decoration: none;
-        }
-
-        ul li a:hover {
-            font-weight: bold;
-        }
-
-        ul li a:active {
-            color: burlywood;
         }
 
         .texto-normal {
@@ -85,144 +90,37 @@
             line-height: 2;
             padding: 30px;
         }
-    </style>
-</head>
-<body>
-    
-    <h1>Recursos para docentes</h1>
-    <p id="eslogan">Recursos que inspiran, educación que transforma</p>
-    
-    <ul>
-        <li><a href="index.html">Principal</a></li>
-        <li><a href="recursos.html">Recursos para el profesorado</a></li>
-        <li><a href="tecnologias.html">Tecnologías y herramientas</a></li>
-    </ul>
 
-    <div id="contenedor-logo">
-    <img id="logoordenador" src="img/logo-ordenador.jpg" alt="Logo del ordenador">
-    </div>
-
-    <h2>Quienes somos</h2>
-
-    <p class="texto-normal">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ea omnis voluptates impedit incidunt unde ratione reiciendis reprehenderit eius voluptatem placeat quisquam magni cumque natus exercitationem, similique repellat ipsa doloremque!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut vel similique animi fugiat, perferendis maxime nam sunt vitae, at vero nulla excepturi illum eveniet laudantium nesciunt quo sequi ratione a!
-    </p>
-
-
-</body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursos Docentes</title>
-    <style>
-        body{
-            padding-left: 20px;
-            padding-right: 20px;
-            background: url(../PAG-WEB-RECURSOS-DOCENTES/img/fondo.jpg) no-repeat center center fixed;
-            background-size: cover;
-            margin: 0%;
-        }
-
-        #contenedor-logo {
-            text-align: center; /* Centra el contenido dentro del contenedor */
-            margin-bottom: 20px;
-            }
-
-        #logoordenador {
-            width: 200px;
-            height: 200px;
-            border-radius: 30%; /* Redondea las esquinas */
-            display: inline-block; /* Asegura que se alinee correctamente */
-        }
-        
-        h1 {
-            font-family: "Parisienne", cursive;
-            font-size: 4em;
-            text-align: center;
-            color: goldenrod;
-            margin-bottom: 5px;
-        }
-
-        h2{
-            font-family: "Pacifico";
-            color: #ffe4c4;
-        }
-
-        #eslogan {
-            font-family: "Caveat", cursive;
-            font-style: italic;
-            text-align: center;
-            font-size: 2em;
-            color: rgb(209, 98, 135);
-            border: 3px solid beige;
-            width: 40%;
-            margin: 0 auto;
-            padding: 10px;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 100px;
-            margin: 10px 0;
-        }
-
-        ul li {
-            color: burlywood;
-            margin: 10px 0;
-        }
-
-        ul li a {
-            font-family: "Pacifico", cursive;
-            font-size: 1.5em;
-            color: burlywood;
-            text-decoration: none;
-        }
-
-        ul li a:hover {
-            font-weight: bold;
-        }
-
-        ul li a:active {
-            color: burlywood;
-        }
-
-        .texto-normal {
-            font-family: "Satisfy", cursive;
-            font-size: 1.2em;
-            color: rgb(209, 98, 135);
-            text-align: justify;
-            line-height: 2;
-            padding: 30px;
+        footer {
+            margin-top: auto;
         }
     </style>
 </head>
 <body>
-    
-    <h1>Recursos para docentes</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="recursos.html">Recursos para el profesorado</a></li>
+            <li><a href="tecnologias.html">Tecnologías y herramientas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+<section id="index.html">
+    <h1 class="titulo">Recursos para docentes</h1>
     <p id="eslogan">Recursos que inspiran, educación que transforma</p>
+    <div id="contenedor">
     
-    <ul>
-        <li><a href="index.html">Principal</a></li>
-        <li><a href="recursos.html">Recursos para el profesorado</a></li>
-        <li><a href="tecnologias.html">Tecnologías y herramientas</a></li>
-    </ul>
+        <h2>Quienes somos</h2>
 
-    <div id="contenedor-logo">
-    <img id="logoordenador" src="img/logo-ordenador.jpg" alt="Logo del ordenador">
+        <p class="texto-normal">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ea omnis voluptates impedit incidunt unde ratione reiciendis reprehenderit eius voluptatem placeat quisquam magni cumque natus exercitationem, similique repellat ipsa doloremque!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut vel similique animi fugiat, perferendis maxime nam sunt vitae, at vero nulla excepturi illum eveniet laudantium nesciunt quo sequi ratione a!
+        </p>
     </div>
+</section>
 
-    <h2>Quienes somos</h2>
-
-    <p class="texto-normal">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ea omnis voluptates impedit incidunt unde ratione reiciendis reprehenderit eius voluptatem placeat quisquam magni cumque natus exercitationem, similique repellat ipsa doloremque!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut vel similique animi fugiat, perferendis maxime nam sunt vitae, at vero nulla excepturi illum eveniet laudantium nesciunt quo sequi ratione a!
-    </p>
-
-
+<footer>
+    &copy; 2025 Recursos para Docentes
+</footer>
 </body>
->>>>>>> RamaMelody
-</html>
