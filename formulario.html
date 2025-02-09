@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+         *{
+    box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #dbf1b3;
+    }
+
+    nav, footer {
+      width: 100%;
+      background-color: #4CAF50; 
+      color: white;
+      display: flex; 
+      justify-content: space-around; 
+      align-items: center; /* Centra los elementos verticalmente */
+      padding: 1%; 
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex; 
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px; 
+      border-radius: 5px; 
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #3e8e41; 
+    }
+
+    .titulo{
+      text-align: center;
+      font-size: 2em;
+      text-shadow: 2px 2px 5px #9ea19e;
+      margin-bottom: 30px;
+    }
+    #contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      background-color: antiquewhite;
+    }
+    form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%; 
+    border-radius: 8px; 
+    border: 1px solid #ddd; 
+    }
+    label {
+        display: block;
+        margin-bottom: 10px; 
+        font-size: 16px; 
+        color: #333; 
+    }
+
+    input, select{
+        display: block;
+        width: 100%; 
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    #activ, #info{
+        display: inline-block;
+        width: auto;
+        margin-right: 10px;
+    }
+
+    #enviar, #reiniciar {
+        background-color: #3e8e41;
+        color: white;
+        font-weight: bold; 
+        cursor: pointer; 
+        border: none;
+        padding: 10px;
+        border-radius: 5px; 
+    }
+
+    footer {
+        margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Principal</a></li>
+          <li><a href="tecnologias.html">Tecnologías y herramientas</a></li>
+          <li><a href="formulario.html">Contacto</a></li>
+      </ul>
+      </nav>
+    <section>
+        <h1  class="titulo">Formulario de Información</h1>
+        <div id="contenedor">
+        <form action="formulario.php" method="post">
+            <label>
+                Nombre y Apellidos:
+                <input type="text" name="nom-mp" maxlength="50" placeholder="Docente" required>
+            </label>
+            <label>
+                Correo Electrónico:
+                <input type="email" id="email" name="email" required>
+            </label>
+
+            <label>
+                Contraseña:
+                <input type="password" id="password" name="password" maxlength="8" required>
+            </label>
+            <label>
+                Nacionalidad:
+                <select id="nacionalidad" name="nacionalidad">
+                    <option value="esp" selected>Española</option>
+                    <option value="ue">Unión Europea</option>
+                    <option value="noue">Fuera de la UE</option>
+                </select>
+            </label>
+
+            <fieldset>
+                <legend>Recusos:</legend>
+                <label>
+                    <input type="radio" id="activ" name="act" value="I"> Infantil
+                </label>
+                <label>
+                    <input type="radio" id="activ" name="act" value="P"> Primaria
+                </label>
+                <label>
+                    <input type="radio" id="activ" name="act" value="S"> Secundaria
+                </label>
+                <label>
+                    <input type="radio" id="activ" name="act" value="B"> Bachillerato
+                </label>
+                <label>
+                    <input type="radio" id="activ" name="act" value="C"> CFGM/ CFGS
+                </label>
+            </fieldset>
+
+            <label>
+                <input type="checkbox" id="info" name="info" checked> Deseo recibir información adicional
+            </label>
+
+            <label>
+                <input type="submit" id="enviar" value="Enviar">
+            </label>
+
+            <label>
+                <input type="reset" id="reiniciar" value="Reiniciar">
+            </label>
+        </form>
+    </div>
+    </section>
+    <footer>
+        &copy; 2025 Recursos para Docentes
+      </footer>
+    
+</body>
+</html>
