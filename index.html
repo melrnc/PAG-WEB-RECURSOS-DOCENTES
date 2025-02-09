@@ -65,10 +65,14 @@
             padding: 20px;
         }
 
-        h2{
+        .quienes-somos{
             font-family: "Pacifico";
             text-shadow: 2px 2px 5px #9ea19e;
-            margin-right: auto;
+            background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+            padding: 20px;
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+            max-width: 700px; /* Limita el ancho */
         }
 
         #eslogan {
@@ -80,6 +84,19 @@
             width: 40%;
             margin: 0 auto;
             padding: 10px;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+        }
+
+        .logo {
+            width: 150px;  /* Ajusta el tamaño según necesites */
+            height: 150px; /* Asegura que sea un círculo */
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            object-fit: cover; /* Ajusta la imagen para que se recorte bien en el círculo */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Opcional: añade sombra */
         }
 
         .texto-normal {
@@ -109,14 +126,20 @@
 <section id="index.html">
     <h1 class="titulo">Recursos para docentes</h1>
     <p id="eslogan">Recursos que inspiran, educación que transforma</p>
-    <div id="contenedor">
+    <div class="logo-container">
+        <img src="img/logo-ordenador.jpg" alt="Logo" class="logo">
+    </div>
     
-        <h2>Quienes somos</h2>
-
+    <div id="contenedor">
+        <section class="quienes-somos">
+        <h2 class="quienes-somos">Quienes somos</h2>
         <p class="texto-normal">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ea omnis voluptates impedit incidunt unde ratione reiciendis reprehenderit eius voluptatem placeat quisquam magni cumque natus exercitationem, similique repellat ipsa doloremque!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut vel similique animi fugiat, perferendis maxime nam sunt vitae, at vero nulla excepturi illum eveniet laudantium nesciunt quo sequi ratione a!
+            En <strong>Recursos para Docentes</strong>, creemos que la tecnología es una aliada clave en la educación. 
+            Somos un equipo de docentes, pedagogos y apasionados por la innovación educativa que buscamos facilitar la enseñanza a través de herramientas digitales.
+            Nuestro objetivo es brindarte las mejores aplicaciones, plataformas y recursos digitales diseñados para hacer tu trabajo más dinámico, eficiente y motivador para los estudiantes. 
+            Desde apps para la gestión del aula hasta herramientas interactivas, aquí encontrarás todo lo que necesitas para potenciar tu labor docente.
         </p>
+        </section>
     </div>
 </section>
 
